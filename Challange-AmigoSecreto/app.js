@@ -19,3 +19,16 @@ function agregarAmigo() {
     console.log(amigos);
     return;
 }
+
+function actualizarAmigos() {
+    
+    lista.innerHTML = '';
+
+    for (let i = 0; i < amigos.length; i++){
+
+        let li = document.createElement("li");
+        li.textContent = amigos[i];
+        lista.appendChild(li);
+    }
+    return;
+}
