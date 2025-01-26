@@ -45,3 +45,10 @@ function sortearAmigo(){
         document.getElementById("resultado").textContent = (`El amigo secreto es: ${amigoElegido}`);
     }
 }
+
+function reiniciarJuego(){
+    amigos = [];
+    lista.innerHTML = '';
+    document.getElementById("resultado").textContent = '';
+    return;  
+}
